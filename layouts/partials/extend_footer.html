@@ -1,0 +1,21 @@
+<footer class="footer">
+  <span>
+    &copy; {{ now.Year }} <a href="{{ `` | absLangURL }}">{{ site.Params.author }}</a>
+  </span>
+
+  {{- print " · "}}
+
+  <span>
+    <a href="{{ absLangURL `impressum` }}">Impressum</a>
+  </span>
+
+  {{- print " · "}}
+
+  <span>
+    <a href="{{ absLangURL `datenschutz` }}">Datenschutz</a>
+  </span>
+</footer>
+
+{{- with resources.Get "js/hidden.js" -}}
+<script type="text/javascript" src="{{ .RelPermalink }}"></script>
+{{- end -}}

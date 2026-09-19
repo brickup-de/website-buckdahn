@@ -1,0 +1,33 @@
+{{- define "main" }}
+<section class="landing-section" aria-labelledby="personen">
+  <h2 id="personen">Wir über uns</h2>
+  <ul class="landing-grid landing-grid--wide">
+    {{- range hugo.Data.links.personen }}
+    <li class="landing-card">
+      <a href="{{ .url }}">
+        <img src="{{ .bild | absURL }}" alt="" width="1200" height="630" loading="lazy">
+        <span class="landing-card__name">{{ .name }}</span>
+        <span class="landing-card__text">{{ .text }}</span>
+        <span class="landing-card__url">{{ (urls.Parse .url).Host }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+
+<section class="landing-section" aria-labelledby="links">
+  <h2 id="links">Links</h2>
+  <ul class="landing-grid">
+    {{- range hugo.Data.links.links }}
+    <li class="landing-card">
+      <a href="{{ .url }}" rel="noopener noreferrer" target="_blank">
+        <img src="{{ .bild | absURL }}" alt="" width="1200" height="630" loading="lazy">
+        <span class="landing-card__name">{{ .name }}</span>
+        <span class="landing-card__text">{{ .text }}</span>
+        <span class="landing-card__url">{{ (urls.Parse .url).Host }} ↗</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}

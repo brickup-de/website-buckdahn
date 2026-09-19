@@ -1,0 +1,87 @@
+.header-nav {
+  justify-content: center;
+}
+
+.header-nav .logo {
+  margin-right: -30px;
+}
+
+#menu {
+  display: none;
+}
+
+.landing .entry-header h1 {
+  margin-bottom: var(--gap);
+}
+
+.landing-section {
+  margin: calc(var(--gap) * 2) 0;
+}
+
+.landing-section h2 {
+  font-size: 20px;
+  margin-bottom: var(--gap);
+  color: var(--primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.landing-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Die beiden persönlichen Seiten stehen nebeneinander, nicht zu dritt. */
+.landing-grid--wide {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.landing-card {
+  background: var(--entry);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.15s ease;
+}
+
+.landing-card:hover {
+  transform: translateY(-2px);
+}
+
+.landing-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: none;
+}
+
+.landing-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  display: block;
+}
+
+.landing-card__name {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 14px 0;
+  color: var(--primary);
+}
+
+.landing-card__text {
+  padding: 6px 14px 0;
+  color: var(--secondary);
+  font-size: 15px;
+  flex-grow: 1;
+}
+
+.landing-card__url {
+  padding: 10px 14px 14px;
+  color: var(--tertiary);
+  font-size: 13px;
+}

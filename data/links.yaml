@@ -1,0 +1,27 @@
+personen:
+  - name: Tobias Buckdahn
+    url: https://brickup.de/
+    bild: /img/tobias.jpg
+    text: Hier tobe ich mich mit LEGO®, Arduino, Fotografie und Webkrams aus.
+
+  - name: Renate Buckdahn
+    url: https://renate.buckdahn.de/
+    bild: /img/renate.jpg
+    text: Ich habe meine Mutter mit LEGO® angesteckt. Ihre Modelle findest du hier.
+
+links:
+  - name: Berliner Steinkultur
+    url: https://berliner-steinkultur.de
+    bild: /img/bsk.jpg
+    text: Verein für erwachsene LEGO®-Fans in Berlin.
+
+  - name: Berliner SteineWAHN!
+    url: https://steinewahn.de
+    bild: /img/steinewahn.jpg
+    text: Jährliche LEGO®-Ausstellung in den Tegeler Seeterrassen.
+
+  - name: brick.camp
+    url: https://brick.camp/de
+    bild: /img/brickcamp.jpg
+    text: Ein Nachschlagewerk für LEGO®-Bautechniken.
+

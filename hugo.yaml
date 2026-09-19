@@ -1,0 +1,44 @@
+baseURL: https://buckdahn.de/
+title: Familie Buckdahn
+theme: PaperMod
+
+locale: de
+defaultContentLanguage: de
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+
+disableKinds:
+  - taxonomy
+  - term
+  - rss
+
+params:
+  env: production
+
+  author: Tobias Buckdahn
+
+  defaultTheme: auto
+  disableThemeToggle: false
+  hideFooter: true
+  ShowBreadCrumbs: false
+
+  assets:
+    disableFingerprinting: false
+    theme_color: "#c8102e"
+
+  footer:
+    text: "[Impressum](/impressum) | [Datenschutz](/datenschutz)"
+
+  label:
+    text: "Familie Buckdahn"
