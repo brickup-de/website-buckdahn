@@ -25,3 +25,8 @@ links:
     bild: /img/brickcamp.jpg
     text: Ein Nachschlagewerk für LEGO®-Bautechniken.
 
+  - name: Tidy ABAP
+    url: https://brickup-de.github.io/abap_tidy/
+    bild: /img/tidy-abap.jpg
+    text: Clean ABAP als übersichtliche, durchsuchbare Webseite
+
